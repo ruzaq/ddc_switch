@@ -19,7 +19,8 @@ check_cache_vs_detected() {
         if [ "$cached_monitors" -eq "$detected_monitors" ]; then
             return 0  # Cache and detected monitors match
         else
-            rm "$DDC_CACHE"  # Delete cache if it doesn't match
+            #rm "$DDC_CACHE"  # Delete cache if it doesn't match
+	    echo "$detected_monitors" > "$DDC_CACHE"  # cache update
             return 1
         fi
     else
