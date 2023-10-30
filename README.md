@@ -13,6 +13,8 @@ This bash script enables the dynamic toggling of input sources (HDMI to DP or DP
 ### Requirements
 
 - **ddcutil:** Ensure `ddcutil` is installed on your system.
+- **zenity** is needed for the monitor selection dialog
+- **notify-send** to display desktop notification
 
 ### Configuration
 
